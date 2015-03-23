@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+            id="com.github.larrybrent.pub" version="0.0.1">
+        <name>EchoPlugin</name>
+        <description>Cordova Echo Plugin</description>
+        <license>None</license>
+        <keywords>cordova,echo</keywords>
+		<repo>https://github.com/LarryBrent/pub</repo>
+				
+		<js-module src="www/echoplugin.js">
+			<clobbers target="window.echoplugin" />
+		</js-module>	
+				
+	    <!-- windows -->
+	    <platform name="windows">
+			<js-module src="src/windows/echopluginProxy.js" name="EchoProxy">
+				<merges target="" />
+			</js-module>
+			<framework src="src/windows/EchoRuntimeComponent.winmd" custom="true"/>
+	    </platform>
+    </plugin>
