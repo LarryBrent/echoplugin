@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
     <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-            id="com.github.larrybrent.pub" version="0.0.1">
+            id="com.github.larrybrent.echoplugin" version="0.0.1">
         <name>EchoPlugin</name>
         <description>Cordova Echo Plugin</description>
         <license>None</license>
